@@ -9,13 +9,12 @@ namespace SnakeAndLadder
             const int NO_PLAY = 0;
             const int LADDER = 1;
             const int SNAKE = 2;
-            int TARGET = 100;
+            const int TARGET = 100;          
             int dicePlayed = 0;
             int playerNo = 1;
-
             int currentScoreP1 = 0;
             int currentScoreP2 = 0;
-            Random random = new Random();
+            Random random = new Random();          
             while (currentScoreP1 != TARGET && currentScoreP2 != TARGET)
             {
                 dicePlayed++;
@@ -28,8 +27,6 @@ namespace SnakeAndLadder
                         Console.WriteLine("NO PLAY");
                         if (playerNo == 1) playerNo = 2;
                         else playerNo = 1;
-
-
                         break;
                     case LADDER:
                         Console.WriteLine("LADDER");
