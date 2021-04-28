@@ -32,18 +32,18 @@ namespace SnakeAndLadder
                         Console.WriteLine("LADDER");
                         if (playerNo == 1)
                         {
-                            currentScoreP1 = currentScoreP1 + diceResult;
+                            currentScoreP1 += diceResult;
                             if (currentScoreP1 > 100)
                             {
-                                currentScoreP1 = currentScoreP1 - diceResult;
+                                currentScoreP1 -= diceResult;
                             }
                         }
                         else
                         {
-                            currentScoreP2 = currentScoreP2 + diceResult;
+                            currentScoreP2 += diceResult;
                             if (currentScoreP2 > 100)
                             {
-                                currentScoreP2 = currentScoreP2 - diceResult;
+                                currentScoreP2 -= diceResult;
                             }
                         }
                         break;
@@ -51,7 +51,7 @@ namespace SnakeAndLadder
                         Console.WriteLine("SNAKE");
                         if (playerNo == 1)
                         {
-                            currentScoreP1 = currentScoreP1 - diceResult;
+                            currentScoreP1 -= diceResult;
                             if (currentScoreP1 < 0)
                             {
                                 currentScoreP1 = 0;
@@ -60,7 +60,7 @@ namespace SnakeAndLadder
                         }
                         else
                         {
-                            currentScoreP2 = currentScoreP2 - diceResult;
+                            currentScoreP2 -= diceResult;
                             if (currentScoreP2 < 0)
                             {
                                 currentScoreP2 = 0;
